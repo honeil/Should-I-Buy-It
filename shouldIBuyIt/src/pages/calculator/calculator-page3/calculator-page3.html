@@ -1,0 +1,35 @@
+  <ion-content padding>
+  <ion-list>
+    <ion-item>
+            <ion-label color="primary">Est. Property Taxes</ion-label>
+            <ion-input type="percent" placeholder="$1000" style="direction: rtl;"></ion-input>
+     </ion-item>
+    <ion-item>
+            <ion-label color="primary">Est. Property Insurance at</ion-label>
+            <ion-input type="percent" placeholder="4.0%" style="direction: rtl;"> </ion-input>
+            <ion-input type="percent" placeholder="$1000" style="direction: rtl;"></ion-input>
+     </ion-item>
+     <ion-item>
+            <ion-label color="primary">Property Mgmt</ion-label>
+            <ion-input type="percent" placeholder="10.0%" style="direction: rtl"></ion-input>
+            <ion-input type="percent" placeholder="$100" style="direction: rtl;"></ion-input>
+     </ion-item>
+     <ion-item>
+            <ion-label color="primary">Vacancy Rate </ion-label>
+            <ion-input type="percent" placeholder="4.0%" style="direction: rtl;"></ion-input>
+            <ion-input type="percent" placeholder="$100" style="direction: rtl;"></ion-input>
+     </ion-item>
+     <ion-item>
+            <ion-label color="primary">Major/Minor Capex        </ion-label>
+            <ion-input type="percent" placeholder="4.0%" style="direction: rtl;"></ion-input>
+            <ion-input type="percent" placeholder="$100" style="direction: rtl;"></ion-input>
+     </ion-item>
+       <ion-item>
+            <ion-label color="primary">HOA/misc.</ion-label>
+            <ion-input type="percent" placeholder="$1000" style="direction: rtl;"></ion-input>
+     </ion-item>
+  </ion-list>
+
+<button ion-button navPop>Go Back</button>
+<button ion-button [navPush]="pushPage">Next</button>
+  </ion-content>

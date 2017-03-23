@@ -1,0 +1,55 @@
+<ion-content padding>
+
+    <ion-label color="primary" stacked>
+			Down Payment &nbsp;  
+            <ion-icon name="ios-information-circle-outline" (click) ="goToEstMarketPriceDefinition()">           
+            </ion-icon>
+    </ion-label> 
+		<ion-item>
+          	<ion-input type="text" placeholder="$20,000" style="direction: rtl;"></ion-input>
+		</ion-item>
+    <ion-label color="primary" stacked>
+			at Interest Rate &nbsp;  
+            <ion-icon name="ios-information-circle-outline" (click) ="goToEstMarketPriceDefinition()">           
+            </ion-icon>
+    </ion-label> 
+		<ion-item>
+        	<ion-input type="text" placeholder="4%" style="direction: rtl;"></ion-input>
+		</ion-item>
+    <ion-label color="primary" stacked>
+			Closing Costs &nbsp;  
+            <ion-icon name="ios-information-circle-outline" (click) ="goToEstMarketPriceDefinition()">           
+            </ion-icon>
+    </ion-label> 
+     <ion-item>
+            <ion-input type="percent" placeholder="$4,000" style="direction: rtl;"></ion-input>
+     </ion-item>
+     <ion-label color="primary" stacked> at </ion-label>
+     <ion-item>
+            <ion-input type="percent" placeholder="4.0%" style="direction: rtl;"></ion-input>
+     </ion-item>
+
+    <ion-item>
+        <ion-label>Mortgage</ion-label>
+        <ion-toggle [(ngModel)]="data.hasMortgage"></ion-toggle>
+    </ion-item>
+
+
+    <ion-list *ngIf ="data.hasMortgage">
+        <ion-item>
+            <ion-label color="primary">Interest Rate</ion-label>
+            <ion-input type="percent" placeholder="4.0%" style="direction: rtl;"></ion-input>
+        </ion-item>
+     <ion-item>
+            <ion-label color="primary">Number of Years</ion-label>
+            <ion-input type="percent" placeholder="30" style="direction: rtl;"></ion-input>
+     </ion-item>
+  </ion-list>
+  
+
+<button ion-button navPop>Go Back</button>
+<button ion-button [navPush]="pushPage">Next</button>
+</ion-content>
+
+
+

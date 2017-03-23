@@ -1,0 +1,30 @@
+
+
+<ion-content padding>  
+	<form>
+        <ion-label class="calc-pg-one" color="primary" stacked>
+			Estimated Market Price &nbsp;  
+            <ion-icon name="ios-information-circle-outline" (click) ="goToEstMarketPriceDefinition()">           
+            </ion-icon>
+        </ion-label> 
+		<ion-item>
+        	<ion-input type="text" placeholder = {{testPrice}} style="direction: rtl;"> </ion-input>
+		</ion-item>
+        <ion-label class= "calc-pg-one" color="primary" stacked>
+			Purchase Price &nbsp;
+            <ion-icon name="ios-information-circle-outline" (click) ="goToEstMarketPriceDefinition()">	
+			</ion-icon>
+        </ion-label>
+		<ion-item>
+        	<ion-input type="text" placeholder="$100,000" style="direction: rtl;"></ion-input>
+		</ion-item>
+     	<ion-label class= "calc-pg-one" color="primary" stacked>
+			 Estimated Rent &nbsp;
+             <ion-icon name="ios-information-circle-outline" (click) ="goToEstMarketPriceDefinition()"></ion-icon>
+        </ion-label>
+		<ion-item>
+            <ion-input type="percent" placeholder="$1000" style="direction: rtl;"></ion-input>
+		</ion-item>
+	</form>
+	<button ion-button [navPush]="pushPage">Next</button>
+</ion-content>
